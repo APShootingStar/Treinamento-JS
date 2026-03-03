@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+main {
+    width: 50%;
+    background-color: rgb(153, 190, 223);
+    padding: 5px 20px 20px 20px;
+    box-shadow: 8px 8px 20px black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-family: "Iceland", sans-serif;
+    text-align: center;
+}
+
+*:not(h1) {
+    font-family: "Rambla", sans-serif;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+label::before {
+    content: "👉🏻";
+}
+
+label::after {
+    content: "👈🏻";
+}
+
+input, select {
+    padding: 5px;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    width: 40%;
+}
+
+small {
+    display: block;
+    color: white;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 5px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+li {
+    border: solid 1px black;
+    line-height: 30px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+ul {
+    list-style-type: none;
+    position: relative;
+    left: -40px;
+}
+
+span {
+    float: right;
+    color: red;
+    font-weight: bold;
+}
+
+#box-btn {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+@media (max-width: 500px) {
+    main {
+        width: 90%;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    body {
+        background-color: rgb(215, 186, 241);
+    }
+}
